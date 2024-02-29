@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header (prima pagina) */
+
+header{
+    background-image: url(../assets/img/hunter-peak-8568915_1280.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* sezione navbar */
+
+#background-navbar{
+    background-color: black;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding-block: 1%;
+}
+
+#button-id{
+    display: flex;
+    gap: 10px;
+    width: 10%;
+}
+
+#sign-in-button, #sign-up-button{
+    padding-block: 2%;
+    padding-inline: 10%;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+#sign-in-button{
+    background-color: black;
+    color: white;
+}
+
+#sign-in-button:hover{
+    background-color: gray;
+    transition: background-color .55s;
+}
+
+#sign-up-button:hover{
+    background-color: gray;
+    color: white;
+    transition: background-color .55s;
+}
+
+
+/* sezione logo */
+
+header #slogan{
+    color: white;
+    position: absolute;
+    right: 20%;
+    top: 12%;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#slogan p{
+    font-weight: 200;
+    font-size: 50px;
+    padding-left: 30px;
+}
+
+header h1{
+    font-weight: 400;
+    font-size: 250px;
+}
+
+/* fine sezione logo */
+
+/* fine header */
