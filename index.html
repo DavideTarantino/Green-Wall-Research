@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Value</title>
 </head>
 <body>
@@ -15,11 +16,18 @@
             <div id="background-navbar">
                 <div id="navbar">
                     <div>
-                        <img src="" alt="logo">
+                        <a href="#"><img src="" alt="Logo"></a>
                     </div>
-                    <div id="button-id">
-                        <button id="sign-in-button">Sign In</button>
-                        <button id="sign-up-button">Sign Up</button>
+                    <div id="right-section">
+                        <div id="link-container">
+                            <a href="#header">Home</a>
+                            <a href="#first-section">Overview</a>
+                            <a href="#second-section">Our Buisness Model</a>
+                        </div>
+                        <div id="button-id">
+                            <button id="sign-in-button">Sign In</button>
+                            <button id="sign-up-button">Sign Up</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -28,6 +36,51 @@
                 <p>Numbers talk, We translate.</p>
             </div>
         </header>
+        <main>
+            <section id="first-section">
+                <div id="container-1">
+                    <h1>Overview</h1>
+                    <div class="flex-container">
+                        <p>Welcome to the future of investment management. Our startup stands at the forefront of financial technology, harnessing the power of advanced machine learning and statistical systems.</p>
+                        <p>Our solution is not just an investment tool; it's a gateway to smarter, more informed investing. Whether you're looking to grow your wealth or secure your financial future, our platform offers a unique blend of personalization, agility, and precision.</p>
+                    </div>
+                </div>
+                <div id="container-2">
+                    <h1>What do we aim to solve</h1>
+                    <p>Our startup is committed to solving these challenges by harnessing the power of machine learning and advanced statistical models. We offer a revolutionary approach to investment, providing personalized portfolios that align precisely with individual investor profiles and objectives.
+                        </p>
+                </div>
+            </section>
+            <section id="second-section">
+                <div id="on-the-left">
+                    <h1>Our Buisness Model</h1>
+                    <p>We want to provide personalized investment solutions, engineered through cutting-edge quantitative methods. We integrate sophisticated machine learning algorithms and statistical analysis to create portfolios uniquely tailored to each user's characteristics and investment goals.
+                        </p>
+                </div>
+                <div id="on-the-right">
+                    <div class="card-1">
+                        <div class="card" style="background-color: #071C42;">
+                            <p class="icon"><i class="fa-solid fa-chart-line"></i></p>
+                            <p class="description">Asset Management</p>
+                        </div>
+                        <div class="card" style="background-color: #0166FF;">
+                            <p class="icon"><i class="fa-solid fa-square-poll-vertical"></i></p>
+                            <p class="description">Risk Management</p>
+                        </div>
+                    </div>
+                    <div class="card-1">
+                        <div class="card" style="background-color: #0166FF;">
+                            <P class="icon"><i class="fa-solid fa-piggy-bank"></i></P>
+                            <p class="description">Yield Farming</p>
+                        </div>
+                        <div class="card" style="background-color: #071C42;">
+                            <p class="icon"><i class="fa-solid fa-receipt"></i></p>
+                            <p class="description">Broker Service</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 
     <script src="https://unpkg.com/vue@3"></script>
