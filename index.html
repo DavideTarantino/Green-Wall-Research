@@ -80,6 +80,36 @@
                     </div>
                 </div>
             </section>
+            <section id="slider-section">
+                <div class="container">
+                    <div class="slider-wrapper" tabindex="0">
+        
+                        <div class="item" @mouseover="stopInterval" @mouseleave="activeInterval">
+                            <div class="prev" @click="prevImage"><i class="fa-solid fa-caret-left"></i></div>
+                            <div class="next" @click="nextImage"><i class="fa-solid fa-caret-right"></i></div>
+                            <img :src="slides[currentImage].image" alt="Spiderman" />
+                            <div class="text">
+                                <h3>{{ slides[currentImage].title }}</h3>
+                                <p>
+                                    {{ slides[currentImage].text }}
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="thumbs">
+                            <div class="thumb">
+                                <img
+                                    v-for=" (imageUrl, index) in slides "
+                                    :src="imageUrl.image"
+                                    class="thumbs"
+                                    :class=" ( currentImage === index ) ? 'active' : '' "
+                                    @click="changeImage(index)">
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 
