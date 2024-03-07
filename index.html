@@ -12,6 +12,7 @@
 </head>
 <body>
     <div id="app">
+
         <header>
             <div id="background-navbar">
                 <div id="navbar">
@@ -36,7 +37,9 @@
                 <p>Numbers talk, We translate.</p>
             </div>
         </header>
+
         <main>
+
             <section id="first-section">
                 <div id="container-1">
                     <h1>Overview</h1>
@@ -51,6 +54,7 @@
                         </p>
                 </div>
             </section>
+
             <section id="second-section">
                 <div id="on-the-left">
                     <h1>Our Buisness Model</h1>
@@ -80,8 +84,21 @@
                     </div>
                 </div>
             </section>
+
             <section id="slider-section">
-                <div class="container">
+                <div id="switch-container">
+                    <h3>Opzione ESG</h3>
+                    <div id="switch-flex">
+                        <h4>OFF</h4>
+                        <label class="switch">
+                            <input type="checkbox" v-model="esgOption">
+                            <span class="slider round"></span>
+                        </label>
+                        <h4>ON</h4>
+                    </div>
+                </div>
+
+                <div class="container" v-if="!esgOption">
                     <div class="slider-wrapper" tabindex="0">
         
                         <div class="item" @mouseover="stopInterval" @mouseleave="activeInterval">
@@ -109,6 +126,36 @@
         
                     </div>
                 </div>
+
+                    <div class="container" v-else>
+                        <div class="slider-wrapper" tabindex="0">
+            
+                            <div class="item" @mouseover="stopInterval" @mouseleave="activeInterval">
+                                <div class="prev" @click="prevImage"><i class="fa-solid fa-caret-left"></i></div>
+                                <div class="next" @click="nextImage"><i class="fa-solid fa-caret-right"></i></div>
+                                <img :src="slidesOn[currentImage].image" alt="Spiderman" />
+                                <div class="text">
+                                    <h3>{{ slidesOn[currentImage].title }}</h3>
+                                    <p>
+                                        {{ slidesOn[currentImage].text }}
+                                    </p>
+                                </div>
+                            </div>
+            
+                            <div class="thumbs">
+                                <div class="thumb">
+                                    <img
+                                        v-for=" (imageUrl, index) in slidesOn "
+                                        :src="imageUrl.image"
+                                        class="thumbs"
+                                        :class=" ( currentImage === index ) ? 'active' : '' "
+                                        @click="changeImage(index)">
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+
             </section>
         </main>
     </div>
