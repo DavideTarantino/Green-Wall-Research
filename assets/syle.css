@@ -7,7 +7,7 @@
 /* header (prima pagina) */
 
 header{
-    background-image: url(../assets/img/hunter-peak-8568915_1280.jpg);
+    background-image: url(https://media.canva.com/1/image-resize/1/2250_1500_92_JPG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9UN01Xay9NQUYtcUdUN01Xay8xL3AuanBn?osig=AAAAAAAAAAAAAAAAAAAAAF8l-dYJU_hjetG6jAM4_w7q_F7S4h-XbXhu3oXzJAcB&exp=1709867823&x-canva-quality=screen_3x&csig=AAAAAAAAAAAAAAAAAAAAAGcA1GFbfxak0YDqYC9urlQjv3qrk6zstzYv44cWBm5E);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,70 +15,32 @@ header{
 }
 
 /* sezione navbar */
-
-#background-navbar{
-    background-color: black;
-    width: 100%;
-}
-
-#navbar{
+#button-div{
+    position: absolute;
+    right: 1%;
+    top: 1%;
     display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin: 0 auto;
-    padding-block: 1%;
+    min-width: 250px;
+    gap: 5%;
 }
 
-#right-section{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-#right-section a{
-    text-decoration: none;
-    color: white;
-    font-family: sans-serif;
-    font-size: 13px;
-}
-
-#right-section a:hover{
-    color: gray;
-}
-
-#link-container{
-    display: flex;
-    gap: 20px;
-}
-
-#button-id{
-    display: flex;
-    gap: 10px;
-}
-
-#sign-in-button, #sign-up-button{
+#button-div button{
     padding-block: 2%;
-    padding-inline: 10%;
-    border-radius: 5px;
+    padding-inline: 8%;
+    border-radius: 10px;
+    background-color: transparent;
     border: none;
-    font-size: 14px;
-    width: 90px;
-}
-
-#sign-in-button{
-    background-color: black;
     color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
-#sign-in-button:hover{
-    background-color: gray;
-    transition: background-color .55s;
-}
-
-#sign-up-button:hover{
-    background-color: gray;
-    color: white;
-    transition: background-color .55s;
+#button-div button:hover{
+    background-color: rgba(1, 1, 1, 0.2);
+    -webkit-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
 }
 
 
@@ -87,8 +49,8 @@ header{
 header #slogan{
     color: white;
     position: absolute;
-    right: 20%;
-    top: 12%;
+    left: 7%;
+    top: -3%;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -116,67 +78,70 @@ header h1{
 /* First section */
 
 #first-section{
-    height: 110vh;
-    font-family: sans-serif;
+    height: 100vh;
     position: relative;
-    background: #0166FF;
-    background: -moz-linear-gradient(-45deg, #0166FF 0%, #011334 0%, #0166FF 100%);
-    background: -webkit-linear-gradient(-45deg, #0166FF 0%, #011334 0%, #0166FF 100%);
-    background: linear-gradient(135deg, #0166FF 0%, #011334 0%, #0166FF 100%);
+    background-color: #EEF2F5;
 }
 
-#first-section #container-1, #container-2{
-    width: 50%;
-    height: 35vh;
-    border-radius: 10px;
-    position: absolute;
-    background-color: rgba(1, 1, 1, 0.5);
-    color: white;
+#container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
 }
 
-#container-1{
-    left: 100px;
-    top: 100px;
+#container #titolo{
+    font-weight: 100;
+    font-size: 70px;
+    font-family: sans-serif;
+    text-align: center;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
 }
 
-#container-2{
-    right: 100px;
-    bottom: 100px;
-}
-
-#first-section div h1{
-    font-size: 40px;
-    margin-top: 35px;
-    margin-left: 45px;
-}
-
-#container-2 h1{
-    padding-left: 6%;
-}
-
-.flex-container{
+#card-section{
+    padding-top: 10%;
     display: flex;
-    gap: 10px;
+    gap: 50px;
+}
+
+.card-first-section{
+    width: calc(100% / 3 - 50px);
+    min-height: 10px;
+    background-color: #DFE3E5;
+    padding-block: 2%;
+    padding-inline: 2%;
+    border-radius: 50px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.card-first-section #icon{
+    font-size: 80px;
+}
+
+.card-first-section h5{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.card-first-section p{
+    font-size: 30px;
+
+}
+
+#first-section #container{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#container-1, #container-2 p{
-    padding: 10px;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-#container-1 p{
-    width: 45%;
-    padding-top: 3%;
-}
-
-#container-2 p{
-    padding-top: 5%;
-    width: 80%;
-    margin: 0 auto;
-}
 
 /* Second section */
 
