@@ -7,7 +7,7 @@
 /* header (prima pagina) */
 
 header{
-    background-image: url(https://media.canva.com/1/image-resize/1/2250_1500_92_JPG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9UN01Xay9NQUYtcUdUN01Xay8xL3AuanBn?osig=AAAAAAAAAAAAAAAAAAAAAF8l-dYJU_hjetG6jAM4_w7q_F7S4h-XbXhu3oXzJAcB&exp=1709867823&x-canva-quality=screen_3x&csig=AAAAAAAAAAAAAAAAAAAAAGcA1GFbfxak0YDqYC9urlQjv3qrk6zstzYv44cWBm5E);
+    background-image: url(../assets/img/mountain-img.webp);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ header h1{
 /* First section */
 
 #first-section{
-    height: 100vh;
+    height: 105vh;
     position: relative;
     background-color: #EEF2F5;
 }
@@ -146,57 +146,49 @@ header h1{
 /* Second section */
 
 #second-section{
-    height: 100vh;
+    height: 110vh;
+    background-color: #011334;
+    color: white;
     font-family: sans-serif;
     display: flex;
+    align-items: center;
 }
 
-#on-the-left{
-    width: 50%;
-    background: #011334;
-    background: -moz-linear-gradient(-45deg, #011334 0%, #0166FF 50%, #011334 100%);
-    background: -webkit-linear-gradient(-45deg, #011334 0%, #0166FF 50%, #011334 100%);
-    background: linear-gradient(135deg, #011334 0%, #0166FF 50%, #011334 100%);
-    height: 100%;
-    color: white;
-}
-
-#on-the-left h1{
-    font-size: 50px;
-    margin-bottom: 5%;
-    padding-top: 35%;
-    text-align: center;
-}
-
-#on-the-left p{
-    font-size: 30px;
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.card{
+#wdwats-section{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-    height: 50vh;
-    color: white;
+    gap: 10px;
+    width: 50%;
+    padding-block: 10%;
+    padding-inline: 5%;
 }
 
-.icon{
-    font-size: 150px;
+#wdwats-section h1, #wdwats-section p{
+    font-size: 70px;
+    text-align: center;
 }
 
-.card .description{
-    font-size: 30px;
-}
-
-.card-1{
+#wdwats-container{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
+.wdwats-divs{
+    background-color: lightslategray;
+    width: 55%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 40px;
+    font-size: 25px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 200;
+    font-style: normal; 
+}
 
 /* Sezione Slider */
 #slider-section{
@@ -205,10 +197,6 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #0166FF;
-    background: -moz-linear-gradient(-45deg, #0166FF 0%, #071C42 52%, #0166FF 100%);
-    background: -webkit-linear-gradient(-45deg, #0166FF 0%, #071C42 52%, #0166FF 100%);
-    background: linear-gradient(135deg, #0166FF 0%, #071C42 52%, #0166FF 100%);
 }
 
 .container {
