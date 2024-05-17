@@ -32,8 +32,12 @@ gap: 30px;
 
 /* header (prima pagina) */
 
+#nav-bar{
+    background-color: white;
+}
+
 header{
-    background-image: url(../assets/img/mountain-img.webp);
+    background-image: url(../assets/img/website_landscape_1.png);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,22 +45,20 @@ header{
 }
 
 /* sezione navbar */
+
 #button-div{
-    position: absolute;
-    right: 1%;
-    top: 1%;
     display: flex;
-    min-width: 250px;
-    gap: 5%;
+    width: 17%;
+    gap: 30px;
 }
 
 #button-div button{
-    padding-block: 2%;
-    padding-inline: 8%;
+    /* padding-block: 2%; */
+    padding-inline: 10%;
     border-radius: 10px;
     background-color: transparent;
     border: none;
-    color: white;
+    /* color: white; */
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
@@ -76,21 +78,17 @@ header #slogan{
     color: white;
     position: absolute;
     left: 7%;
-    top: -3%;
+    top: 42%;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    font-weight: 10;
 }
 
-#slogan p{
-    font-weight: 200;
-    font-size: 50px;
-    padding-left: 30px;
-}
-
-header h1{
-    font-weight: 400;
-    font-size: 250px;
+#re{
+    position: absolute;
+    top: 220px;
+    font-size: 100px;
 }
 
 /* fine sezione logo */
@@ -104,7 +102,7 @@ header h1{
 /* First section */
 
 #first-section{
-    height: 105vh;
+    height: 120vh;
     position: relative;
     background-color: #EEF2F5;
 }
@@ -120,14 +118,16 @@ header h1{
     font-size: 70px;
     font-family: sans-serif;
     text-align: center;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 400;
-    font-style: normal;  
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400; 
 }
 
 #card-section{
     padding-top: 10%;
     display: flex;
+    justify-content: center;
     gap: 50px;
 }
 
@@ -142,9 +142,10 @@ header h1{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 400;
-    font-style: normal;  
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;  
 }
 
 .card-first-section #icon{
@@ -173,7 +174,7 @@ header h1{
 
 #second-section{
     height: 110vh;
-    background-color: #011334;
+    background-color: #005B49;
     color: white;
     font-family: sans-serif;
     display: flex;
@@ -181,17 +182,13 @@ header h1{
 }
 
 #wdwats-section{
-    display: flex;
-    flex-direction: column;
     gap: 10px;
-    width: 50%;
+    width: 60%;
     padding-block: 10%;
     padding-inline: 5%;
-}
-
-#wdwats-section h1, #wdwats-section p{
-    font-size: 70px;
-    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 #wdwats-container{
@@ -211,9 +208,10 @@ header h1{
     justify-content: center;
     border-radius: 40px;
     font-size: 25px;
-    font-family: "Rajdhani", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-weight: 200;
-    font-style: normal; 
 }
 
 /* Sezione Slider */
@@ -223,7 +221,7 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #011334;
+    background-color: #005B49;
 }
 
 .container {
@@ -327,7 +325,7 @@ header h1{
 
 #switch-container{
     position: absolute;
-    right: 18%;
+    right: 22%;
     top: 18%;
     z-index: 999;
     display: flex;
@@ -410,9 +408,10 @@ header h1{
 
   #third-section{
     height: 100vh;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 200;
-    font-style: normal; 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 100;
   }
 
   #third-section #third-section-left-container{
@@ -448,7 +447,7 @@ header h1{
   #fourth-section #on-the-right-card{
     width: 50%;
     background-color: #EDEDED;
-    height: 70vh;
+    height: 80vh;
     padding-inline: 40px;
     border-radius: 20px;
   }
@@ -457,4 +456,17 @@ header h1{
     background-color: lightgray;
     padding: 10px;
     border-radius: 20px;
+  }
+
+
+  /* FAQ section */
+  #FAQ-section{
+    background-color: #005B49;
+    height: 100vh;
+  }
+
+  /* Footer */
+  footer{
+    background-color: #005B49;
+    height: 60vh;
   }

@@ -9,19 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Value</title>
 </head>
 <body>
     <div id="app">
-
-        <header>
+        <div class="flex justify-between px-20 py-2">
+            <div class="flex gap-6">
+                <a href="" class="text-lg">Investing</a>
+                <a href="" class="text-lg">Company</a>
+                <a href="" class="text-lg">FAQ</a>
+            </div>
             <div id="button-div">
                 <button>Sign In</button>
                 <button>Sign Up</button>
             </div>
+        </div> 
+        <header>
             <div id="slogan">
-                <h1>Value</h1>
-                <p>Numbers talk, We translate.</p>
+                <p style="font-size: 200px;">Green Wall</p>
+                <p id="re">research</p>
             </div>
         </header>
 
@@ -52,7 +62,7 @@
 
             <section id="second-section">
                 <div id="wdwats-section">
-                   <h1>What do We aim to solve?</h1><p>We are committed to solving these challenges by harnessing the power of machine learning and advanced statistical models. </p> 
+                    <span style="font-size: 70px;">What do We aim to solve ?</span> <span style="font-size: 70px; font-weight: 100;">We are committed to solving these challenges by harnessing the power of machine learning and advanced statistical models.</span>
                 </div>
                 <div id="wdwats-container">
                     <div class="wdwats-divs">
@@ -77,10 +87,10 @@
                             <p style="font-size: 20px; font-weight: 400;">Your Portfolio</p>
                             <h1 style="font-size: 40px; font-weight: 500;">$ 7.904,08</h1>
                             <div class="flex-container gap-30">
-                                <h2>+ $ 103,75</h2>
+                                <h2 style="font-weight: 400;" class="text-lg">+ $ 103,75</h2>
                                 <div class="flex-container gap-5">
                                     <i class="fa-solid fa-caret-up" style="color: #4ec84c; font-size: 30px;"></i>
-                                    <h2 style="color: #4ec84c;">+ 3,57%</h2>
+                                    <h2 style="color: #4ec84c; font-weight: 400;" class="text-lg">+ 3,57%</h2>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +113,7 @@
                                 </div>
                             </div>
                             <div style="text-align: start;">
-                                <h1>Allocation Strategy:</h1>
+                                <h1 style="font-weight: 400;">Allocation Strategy:</h1>
                                 <h2 style="font-weight: 400;">Growt Portfolio</h2>
                                 <div class="flex-container align-items-center">
                                     <h2 style="font-weight: 400;">Risk Level :</h2>
@@ -118,7 +128,7 @@
                 </div>
                 <div style="width: 50%;">
                     <div style="width: 70%; text-align: end;">
-                        <h1 style="font-size: 65px; font-weight: 600;">Give all your money a place to grow.</h1>
+                        <h1 style="font-size: 65px; font-weight: 400; color: #005B49;">Give all your money a place to grow.</h1>
                         <p style="font-size: 65px;">Keep your portfolio aligned with ever-changing market conditions, helping you manage risk effectively.</p>
                     </div>
                 </div>
@@ -135,19 +145,19 @@
                     <div id="on-the-right-card" class="flex-container flex-column gap-15" style="margin: 0 auto;">
                         <p style="font-size: 25px; font-weight: 400; text-align: center; padding-top: 25px;">Portfolio <br> Growt Level</p>
                         <div class="flex-container align-items-center gap-15 mini-card">
-                            <i class="fa-solid fa-bolt-lightning" style="color: #000000; font-size: 50px;"></i>
+                            <i class="fa-solid fa-bolt-lightning" style="color: #005B49; font-size: 50px;"></i>
                             <p style="font-size: 25px;"><strong>Growth Strategy</strong><br>Balances growt potential and capital caption.</p>
                         </div>
                         <div class="flex-container align-items-center gap-15 mini-card">
-                            <i class="fa-solid fa-flag" style="color: #000000; font-size: 50px;"></i>
+                            <i class="fa-solid fa-flag" style="color: #005B49; font-size: 50px;"></i>
                             <p style="font-size: 25px;"><strong>Moderate Strategy</strong><br>Seeking a balance between return and capital safety.</p>
                         </div>
                         <div class="flex-container align-items-center gap-15 mini-card">
-                            <i class="fa-solid fa-umbrella" style="color: #000000; font-size: 50px;"></i>
+                            <i class="fa-solid fa-umbrella" style="color: #005B49; font-size: 50px;"></i>
                             <p style="font-size: 25px;"><strong>Lazy Strategy</strong><br>Balanced and diversified investment approach.</p>
                         </div>
                         <div class="flex-container align-items-center gap-15 mini-card">
-                            <i class="fa-solid fa-shield" style="color: #000000; font-size: 50px;"></i>
+                            <i class="fa-solid fa-shield" style="color: #005B49; font-size: 50px;"></i>
                             <p style="font-size: 25px;"><strong>Income Strategy</strong><br>Conservative portfolio who prefer capital preservation.</p>
                         </div>
                     </div>
@@ -225,7 +235,69 @@
                     </div>
             
             </section>
+            <section id="FAQ-section" class="px-44">
+                <h1 class="text-white text-5xl pt-20">#FAQ</h1>
+                <div class="flex flex-column gap-10 pt-28">
+                    <div class="flex gap-3 items-center">
+                        <i class="fa-solid fa-plus text-5xl" style="color: #ffffff;"></i>
+                        <span class="text-white text-3xl">Question 1</span>
+                    </div>
+                    <hr>
+                    <div class="flex gap-3 items-center">
+                        <i class="fa-solid fa-plus text-5xl" style="color: #ffffff;"></i>
+                        <span class="text-white text-3xl">Question 2</span>
+                    </div>
+                    <hr>
+                    <div class="flex gap-3 items-center">
+                        <i class="fa-solid fa-plus text-5xl" style="color: #ffffff;"></i>
+                        <span class="text-white text-3xl">Question 3</span>
+                    </div>
+                    <hr>
+                    <div class="flex gap-3 items-center">
+                        <i class="fa-solid fa-plus text-5xl" style="color: #ffffff;"></i>
+                        <span class="text-white text-3xl">Question 4</span>
+                    </div>
+                    <hr>
+                </div>
+            </section>
         </main>
+        <hr>
+        <footer class="px-44 text-white flex">
+            <div class="pt-24 flex flex-column gap-32 prova w-5/12">
+                <figure>Your Logo Here</figure>
+                <div class="flex flex-column">
+                    <p>CONNECT WITH US</p>
+                    <a href="">Instagram</a>
+                    <a href="">Twitter</a>
+                    <a href="">Facebook</a>
+                    <a href="">LinkedIn</a>
+                </div>
+                <p>hello@reallygreatsite.com</p>
+            </div>
+            <div class="pt-24 flex flex-column gap-24">
+                <p class="text-2xl">Your final impact statement goes <br> here. Make it memorable!</p>
+                <div>
+                    <p class="pb-5">OUR LOCATION</p>
+                    <div class="flex gap-10">
+                        <div>
+                            <p>Add you location</p>
+                            <p>123 Anywhere St...</p>
+                            <p>Any City, ST 12345</p>
+                        </div>
+                        <div>
+                            <p>Add you location</p>
+                            <p>123 Anywhere St...</p>
+                            <p>Any City, ST 12345</p>
+                        </div>
+                        <div>
+                            <p>Add you location</p>
+                            <p>123 Anywhere St...</p>
+                            <p>Any City, ST 12345</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     
     <script src="https://unpkg.com/vue@3"></script>
